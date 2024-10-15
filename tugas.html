@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUGAS LATIHAN 16 OKTOBER 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Form Pendaftaran</h1>
+    <p>Pendataan mahasiswa yang lulus dari itpln</p>
+    <form action="table.html">
+        <fieldset>
+            <table border="15">
+            <tr>
+            <td>
+            <label for="nama">NAMA:</label>
+            <input type="text" name="name" id="name" autofocus required>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <label for="nim">NIM:</label>
+            <input type="text" name="nim" id="nim" autofocus required>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <label for="dob">TEMPAT, TANGGAL LAHIR:</label>
+            <input type="date" id="dob" name="dob" required>
+            <span class="error" id="dobError"></span>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <label for="country">ASAL:</label>
+            <select id="country" name="country" required>
+            <option value="">Pilih asal anda...</option>
+            <option value="Aceh">Aceh</option>
+            <option value="Sumatera Utara">Sumatera Utara</option>
+            <option value="Sumatera Barat">Sumatera Barat</option>
+            <option value="Riau">Riau</option>
+            <option value="Kepulauan Riau">Kepulauan Riau</option>
+            <option value="Jambi">Jambi</option>
+            <option value="Sumatera Selatan">Sumatera Selatan</option>
+            <option value="Bengkulu">Bengkulu</option>
+            <option value="Lampung">Lampung</option>
+            <option value="Bangka Belitung">Bangka Belitung</option>
+            <option value="DKI Jakarta">DKI Jakarta</option>
+            <option value="Jawa Barat">Jawa Barat</option>
+            <option value="Banten">Banten</option>
+            <option value="Jawa Tengah">Jawa Tengah</option>
+            <option value="DI Yogyakarta">DI Yogyakarta</option>
+            <option value="Jawa Timur">Jawa Timur</option>
+            <option value="Bali">Bali</option>
+            <option value="Nusa Tenggara Barat">Nusa Tenggara Barat</option>
+            <option value="Nusa Tenggara Timur">Nusa Tenggara Timur</option>
+            <option value="Kalimantan Barat">Kalimantan Barat</option>
+            <option value="Kalimantan Tengah">Kalimantan Tengah</option>
+            <option value="Kalimantan Selatan">Kalimantan Selatan</option>
+            <option value="Kalimantan Timur">Kalimantan Timur</option>
+            <option value="Kalimantan Utara">Kalimantan Utara</option>
+            <option value="Sulawesi Utara">Sulawesi Utara</option>
+            <option value="Gorontalo">Gorontalo</option>
+            <option value="Sulawesi Tengah">Sulawesi Tengah</option>
+            <option value="Sulawesi Barat">Sulawesi Barat</option>
+            <option value="Sulawesi Selatan">Sulawesi Selatan</option>
+            <option value="Sulawesi Tenggara">Sulawesi Tenggara</option>
+            <option value="Maluku">Maluku</option>
+            <option value="Maluku Utara">Maluku Utara</option>
+            <option value="Papua">Papua</option>
+            <option value="Papua Barat">Papua Barat</option>
+            <option value="Papua Selatan">Papua Selatan</option>
+            <option value="Papua Tengah">Papua Tengah</option>
+            <option value="Papua Pegunungan">Papua Pegunungan</option>            
+            </select>
+            <span class="error" id="countryError"></span>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <label for="email">EMAIL:</label>
+            <input type="email" name="email" id="email" placeholder="silahkan masukkan email">
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <label for="nomor telepon">NOMOR TELEPON:</label>
+            <input type="text" name="phone" id="phone" autofocus required>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="alamat">ALAMAT:</label>
+                    <textarea name="address" id="address" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="zipcode">ZIPCODE:</label>
+                    <input type="text" name="zipcode" id="zipcode" required pattern="[0-9]{5}" title="5 angka">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="prodi">PRODI:</label>
+                </td>
+                <td>
+                <select name="prodi" id="prodi" required>
+                    <option value="">Pilih jurusan anda...</option>
+                    <option value="">informatics engineering</option>
+                    <option value="">system information</option>
+                    <option value="">mechanical engineering</option>
+                    <option value="">civil engineering</option>
+                    <option value="">industrial engineering</option>
+                    <option value="">electrical power engineering</option>
+                    <option value="">energy business</option>
+                    <option value="">electrical engineering</option>
+                    <option value="">geography</option>
+                    <option value="">environmental engineering</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">KELAMIN:</label>
+                    <input type="radio" name="gender" id="pria" value="pria"> <label for="pria">PRIA</label>
+                    <input type="radio" name="gender" id="wanita" value="wanita"> <label for="wanita">WANITA</label>
+                </td>
+            </tr>
+            <td>
+            <input type="submit" value="SUBMIT">
+            </td>
+        </table>
+        </table>
+        </fieldset>
+    </form>
+</body>
+</html>
